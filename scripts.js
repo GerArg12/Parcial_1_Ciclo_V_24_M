@@ -5,10 +5,10 @@ function agregarName() {
     nuevoParrafo.textContent = 'Nombre de la banda: Los integrantes de la banda solían ir a una finca en las afueras de Bogotá llamada "La Morat", lugar donde la banda hizo sus primeros ensayos. La finca pertenecía a un familiar del exintegrante Alejandro Posada Carrasco, Antonio de Morat. Antes de adoptar el nombre Morat, eran conocidos como "Malta". Pero, tiempo después, al ir a firmar con Universal Music, una banda brasileña ya estaba registrada como Malta, así que cambiaron su nombre al actual.';
 
     // Obtener el body
-    var body = document.body;
+    var mostrar = document.getElementById('mostrar');
 
     // Agregar los elementos al body
-    body.appendChild(nuevoParrafo);
+    mostrar.appendChild(nuevoParrafo);
   }
   function agregarNames(){
     // Crear una nueva lista
@@ -20,24 +20,25 @@ function agregarName() {
     var nuevoElementoLista3 = document.createElement('li');
     nuevoElementoLista3.textContent = 'Simón Vargas Morales.';
     var nuevoElementoLista4 = document.createElement('li');
-    nuevoElementoLista4.textContent = 'Martín Vargas Morales.';
+    nuevoElementoLista4.textContent = 'Martín Vargas Morales.';
 
         // Agregar elementos a la nueva lista
         nuevaLista.appendChild(nuevoElementoLista1);
         nuevaLista.appendChild(nuevoElementoLista2);
         nuevaLista.appendChild(nuevoElementoLista3);
         nuevaLista.appendChild(nuevoElementoLista4);
-        var body = document.body;
-        body.appendChild(nuevaLista);
+        var mostrar = document.getElementById('mostrar');
+        mostrar.appendChild(nuevaLista);
   }
+
   function agregarLogo(){
 
         // Crear una nueva imagen
         var nuevaImagen = document.createElement('img');
         nuevaImagen.src = 'img/logo.jpg';
         nuevaImagen.alt = 'Nueva imagen';
-        var body = document.body;
-        body.appendChild(nuevaImagen);
+        var mostrar = document.getElementById('mostrar');
+        mostrar.appendChild(nuevaImagen);
 
   }
 
